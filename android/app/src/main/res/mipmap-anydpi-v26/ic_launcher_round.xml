@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Lapisan depan berupa PNG, bukan vektor: ilustrasinya 60 path dengan
+    clipPath dan gradasi, yang tidak bisa dijadikan VectorDrawable.
+
+    Marginnya sengaja jauh lebih lebar daripada versi penuh di mipmap-*.
+    Launcher memotong ikon jadi lingkaran di banyak HP, dan pada margin
+    yang lebih sempit potongan itu memakan kabin, ekor bak, dan kedua roda.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_ikon_depan" />
+</adaptive-icon>

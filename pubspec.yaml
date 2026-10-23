@@ -1,0 +1,65 @@
+name: driver_tmk
+description: "Aplikasi driver Tani Makmur: kiriman hari ini, laporan bongkar, riwayat, dan izin."
+publish_to: 'none'
+version: 1.0.11+12
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Konfigurasi per lingkungan
+  flutter_dotenv: ^6.0.0
+
+  # State
+  provider: ^6.1.1
+
+  # Jaringan
+  dio: ^5.4.0
+  dio_smart_retry: ^6.0.0
+  connectivity_plus: ^5.0.2
+
+  # Penyimpanan
+  flutter_secure_storage: ^10.0.0
+  shared_preferences: ^2.2.2
+  device_info_plus: ^10.1.0
+  package_info_plus: ^8.0.0
+
+  # UI
+  cupertino_icons: ^1.0.6
+  google_fonts: ^8.0.1
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.10
+
+  # Kamera & lokasi
+  image_picker: ^1.0.7
+  flutter_image_compress: ^2.1.0
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.0
+  geolocator: ^11.0.0
+
+  # Notifikasi muatan. Versinya disamakan dengan aplikasi sales karena
+  # keduanya memakai proyek Firebase yang sama.
+  firebase_core: ^3.6.0
+  firebase_messaging: ^15.2.10
+  flutter_local_notifications: ^18.0.1
+
+  # Utilitas
+  url_launcher: ^6.2.5
+  intl: ^0.20.2
+  logger: ^2.6.2
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env.development
+    - .env.production
+    - assets/logo/

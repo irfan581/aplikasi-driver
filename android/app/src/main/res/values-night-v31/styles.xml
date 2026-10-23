@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Sama dengan values-v31: layar peluncuran Android 12+ dibuat tak
+        terlihat (latar putih + ikon kosong) supaya langsung tersambung ke
+        animasi splash Flutter.
+
+        Aplikasi ini hanya punya tema terang, jadi mode gelap sistem pun tetap
+        memakai latar putih — kalau di sini dibuat gelap, akan ada kedipan
+        hitam-ke-putih sebelum Flutter sempat menggambar.
+    -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowSplashScreenBackground">@color/tmk_latar_peluncuran</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_kosong</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/tmk_latar_peluncuran</item>
+    </style>
+</resources>

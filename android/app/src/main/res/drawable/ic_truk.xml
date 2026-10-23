@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Siluet truk box, dipakai untuk ikon layar peluncuran Android 12+ dan
+    lapisan depan ikon aplikasi. Sengaja mengikuti proporsi kotak-muatan +
+    kabin dari IlustrasiTruk di Dart (bukan ikon Material Design generik
+    seperti sebelumnya) — supaya truk yang tampil sesaat sebelum Flutter
+    menyala terasa sebagai truk yang sama, cuma versi siluet, bukan aset lain.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Kotak muatan -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,34 H66 V76 H12 Z" />
+    <!-- Kabin, lebih pendek dari kotak muatan seperti truk box sungguhan -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,52 H92 V76 H66 Z" />
+    <!-- Dua roda -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,84 A9,9 0 1,1 43,84 A9,9 0 1,1 25,84 Z
+                            M71,84 A9,9 0 1,1 89,84 A9,9 0 1,1 71,84 Z" />
+</vector>

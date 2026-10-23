@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Drawable transparan untuk ikon layar peluncuran Android 12+.
+
+    Android 12 ke atas WAJIB menggambar sesuatu di tengah layar peluncurannya;
+    kalau atribut windowSplashScreenAnimatedIcon dihapus, sistem otomatis
+    memakai ikon aplikasi. Karena yang diinginkan adalah layar peluncuran
+    polos tanpa gambar apa pun — supaya peralihan ke splash Flutter tidak
+    terlihat — di sini diisi drawable kosong.
+
+    Ikon aplikasi di layar HP tetap memakai ic_truk dan tidak terpengaruh.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1dp"
+    android:height="1dp"
+    android:viewportWidth="1"
+    android:viewportHeight="1">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,0h1v1h-1z" />
+</vector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nada dan ikon notifikasi dirujuk lewat nama, jadi harus dijaga dari
+     pembuangan resource saat build rilis. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/muatan_baru,@drawable/ic_truk" />

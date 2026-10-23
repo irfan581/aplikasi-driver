@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Oranye Tani Makmur, sama dengan WarnaApp.primary di Dart. Dipakai
+         ikon aplikasi, bukan lagi layar peluncuran. -->
+    <color name="tmk_oranye">#F97316</color>
+
+    <!-- Latar layar peluncuran, sama dengan WarnaApp.surface di Dart. Warnanya
+         sengaja disamakan dengan latar splash Flutter supaya perpindahan dari
+         layar peluncuran Android ke layar Flutter tidak terlihat berkedip. -->
+    <color name="tmk_latar_peluncuran">#FFFFFF</color>
+</resources>

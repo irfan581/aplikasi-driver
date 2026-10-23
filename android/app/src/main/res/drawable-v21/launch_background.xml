@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layar yang digambar Android (di bawah versi 12) sebelum Flutter sempat
+    melukis frame pertama. Warnanya disamakan dengan latar splash Flutter
+    supaya perpindahannya tidak terlihat — driver hanya melihat satu
+    pembukaan, bukan dua.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/tmk_latar_peluncuran" />
+</layer-list>

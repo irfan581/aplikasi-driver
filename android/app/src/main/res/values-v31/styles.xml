@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Android 12 ke atas menggambar layar peluncurannya sendiri dan
+        mengabaikan windowBackground. Layar itu TIDAK bisa dimatikan — kalau
+        atribut ikonnya dihapus, sistem malah memakai ikon aplikasi.
+
+        Jadi caranya dibuat tak terlihat: latarnya diputihkan (sama persis
+        dengan latar splash Flutter) dan ikonnya diisi drawable kosong. Yang
+        driver lihat tinggal satu layar putih yang langsung disambung animasi
+        splash Flutter, bukan dua pembukaan berbeda.
+    -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowSplashScreenBackground">@color/tmk_latar_peluncuran</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_kosong</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Latar putih: jam dan baterai harus gelap sejak detik pertama. -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/tmk_latar_peluncuran</item>
+    </style>
+</resources>
